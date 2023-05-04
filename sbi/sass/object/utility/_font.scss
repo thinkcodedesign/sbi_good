@@ -1,0 +1,12 @@
+@charset "utf-8";
+@use "../../global" as *;
+
+.bg-red{
+  background-color: $red;
+}
+.bg-green{
+  background-color: $lightgreen;
+}
+.bg-blue{
+  background-color: $lightblue;
+}

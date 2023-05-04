@@ -1,0 +1,37 @@
+@charset "utf-8";
+@use "sass:math";
+@use "../../global" as *;
+
+
+
+.c-button{
+  width: 100%;
+  font-size: 3.6rem;
+  color: $white;
+  text-align: center;
+}
+
+
+
+// .c-button__link{
+//   background-color: $orange;
+//   border-radius: 2rem;
+//   padding: 1.8rem;
+//   color: $orange;
+//   display: block;
+//   filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.3));
+
+//   -webkit-text-stroke: 5px $white;
+//   position: relative;
+// }
+
+// .c-button__link::before{
+//   content: attr(data-text);
+//   -webkit-text-stroke: 0;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   white-space: nowrap;
+// }
+

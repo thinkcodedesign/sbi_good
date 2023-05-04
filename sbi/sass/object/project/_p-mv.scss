@@ -1,8 +1,9 @@
 @charset "utf-8";
+@use "sass:math";
 @use "../../global" as *;
 
 .p-mv{
-  padding-top: 19rem;
+
 }
 
 .p-mv__contents{
@@ -53,4 +54,79 @@
 
 .ft-183{
   font-size: 18.354rem;
+}
+
+.p-mv__notice{
+  margin-top: 0.8rem;
+  font-size: 2.2rem;
+}
+
+.p-mv__lists{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  list-style:none;
+}
+
+.p-mv__list{
+  max-width: 14rem;
+  width: 100%;
+
+}
+
+.p-mv__list span{
+  display: block;
+  font-size: 2.4rem;
+  color: $white;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  border-radius: 1.7rem;
+}
+
+.p-mv__list:not(:first-child
+){
+  margin-left: 0.9rem;
+}
+
+.p-mv__list--bigger{
+  max-width: 21rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.p-mv__list--bigger::before{
+  content: "+";
+  display: inline-block;
+  margin-right: 0.9rem;
+  font-size: 2.6rem;
+  line-height: math.div(31.2 , 26);
+}
+
+.p-mv__paragraph{
+  font-weight: 500;
+  font-size: 2.6rem;
+  margin-top: 1.2rem;
+}
+.p-mv__paragraph2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  max-width: 58.5rem;
+  width: 100%;
+  margin: 3rem auto 0;
+  border: 2px solid $black;
+  border-radius: 1rem;
+}
+.p-mv__paragraph2 span:nth-child(1){
+  font-size: 2.28rem;
+}
+.p-mv__paragraph2 span:nth-child(2){
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-size: 2rem;
 }
